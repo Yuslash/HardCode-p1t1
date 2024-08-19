@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html
+{
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+    display: flex;
+    background-color: #140b29;
+    font-family: "Poppins", sans-serif;
+}
+
+#root{
+  position: relative;
+  top: 56px;
+  width: 100%;
+  height: 600px;
+}
+
+#webgl
+{
+  position: relative;
+  top: 96px;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to bottom, #312256, #201335);
+}
+
+.heading
+{
+  top: 0;
+  position: fixed;
+  z-index: 3;
+  background-color: #140b29;
+
+}
+
+.maintext
+{
+    margin-left: 200px;
+    max-width: 600px;
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: -.02em;
+}
+
+.paragraph
+{
+  line-height: 1.2em;
+}
+
+.top
+{
+  margin-top: -20px;
+  padding-top: 10px;
+  border-top: solid 2px rgb(131, 78, 255);
+}
+
+.icon
+{
+  color: rgb(131, 78, 255);
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+    box-shadow: 0px 11px 30px rgba(158, 31, 255, 0.92);
+  
+}
+
+.icon:hover{
+  color: rgb(239, 22, 255);
+  box-shadow: 0px 11px 30px 20px rgba(158, 31, 255, 0.775);
+}
+
+@media screen and (max-width: 1280px) {
+
+.maintext{
+  margin-left: 100px;
+}  
+.webgl
+{
+  width: 760px;
+}
+}
+
+#portfolio
+{
+top: 2160px;
+  left: 0;
+  position: absolute;
+  /* background-color: blue; */
+  width: 100%;
+  height: 1080px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.skills-container
+{
+  text-align: top;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 1080px;
+  width: 1920px;
+  height: 1080px;
+  background-color: #140b29;
+  gap: 20px;
+  z-index: 2;
+}
+
+.main-box
+{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1150px;
+  height: 404px;
+  /* background-color: purple; */
+  gap: 10px;
+}
+
+.child-box
+{
+  padding-top: 5px;
+  width: 570px;
+  height: 200px;
+  background-color: #4F228D;
+  border-radius: 15px;
+}
+.innerchild
+{
+  display: flex;
+  padding-left: 45px;
+  align-items: center;
+  border-radius: 15px;
+  width: 570px;
+  height: 100%;
+  background: linear-gradient(-74deg, #130428 7%, #251043 34%, #38126D 57%, #261045 85%, #190634 100%);
+  gap: 30px;
+}
+
+.blur-circle
+{
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  background-color: #552B85;
+  border-radius: 100%;
+  z-index: -1;
+  filter: blur(150px);
+}
+
+.innerchild img{
+  width: 100px;
+  height: 100px;
+  /* box-shadow: 0px 11px 30px rgba(0, 0, 0, 0.92); */
+}
+
+.content-button
+{
+  color: white;
+}
+
+.content-button button
+{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  /* padding-left: 30px; */
+  /* padding-right: 30px; */
+  width: 150px;
+  height: 35px;
+  background-color: #2C1250;
+  border-radius: 8px;
+  border: 2px solid #673499;
+
+}
+
+.content-button button:hover{
+  background-color: rgb(119, 0, 255);
+  border: 2px solid #ba47f0;
+}
+
+.skills-text
+{
+  font-size: 36px;
+  color: white;
+}
+
+.image-container {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  pointer-events: none;
+  z-index: 3;
+  /* Full height of the viewport */
+}
+
+.image-container img {
+  position: absolute;
+  width: 100%;
+  /* Adjust this as needed */
+  height: 600px;
+  opacity: 0.4;
+  /* Maintain aspect ratio */
+}
+
+.image-container img:first-child {
+  top: 0;
+  /* Position at the top of the viewport */
+}
+
+.image-container img:last-child {
+  bottom: 0;
+  /* Position at the bottom of the viewport */
+}
+
+
+.console{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 100px;
+  top: 300px;
+  filter: blur(4px);
+  animation: float 3s ease-in-out infinite;
+}
+.captainamerica
+{
+  position: absolute;
+  width: 400px;
+  height: auto;
+  left: 7%;
+  top: 50%;
+  transform: rotate(10deg);
+  animation: here 3s ease-in-out infinite;
+}
+
+.Rectangle
+{
+  position: absolute;
+  top: 30%;
+  left: 88%;
+  filter: blur(5px);
+  animation: cup 3s ease-in-out infinite;
+}
+
+.coding
+{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+  left: 78%;
+  top: 53%;
+  filter: blur(3px);
+  animation: float 3s ease-in-out infinite;
+}
+
+.badminton
+{
+  position: absolute;
+  top: 79%;
+  left: 30%;
+  filter: blur(4px);
+
+}
+
+.game {
+  position: absolute;
+  top: 73%;
+  left: 60%;
+  filter: blur(1px);
+  transform: rotate(180deg);
+
+}
+
+@keyframes here {
+  0% {
+    transform: translateX(0) rotate(10deg);
+  }
+
+  50% {
+    transform: translateX(-20px) rotate(10deg);
+  }
+
+  100% {
+    transform: translateX(0) rotate(10deg);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(-20deg); 
+  }
+
+  50% {
+    transform: translateY(-20px) rotate(-20deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(-20deg);
+  }
+}
+
+@keyframes cup {
+  0% {
+    transform: translateX(0)
+  }
+
+  50% {
+    transform: translateX(-20px)
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}
