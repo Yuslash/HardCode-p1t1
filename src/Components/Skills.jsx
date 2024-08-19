@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Skills = () => {
-    x
+    
 
   return (
     <div className='skills-container'>
